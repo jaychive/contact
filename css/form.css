@@ -1,0 +1,179 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+/* 부트스트랩 튜닝 */
+.form-control {
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 0;
+}
+.form-check-input[type=checkbox] {
+  border-radius: 0;
+}
+
+/* 웹 표준 */
+* {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* 공통클래스 */
+.activeBox {
+  border: 3px solid #0075FF;
+}
+
+.formBox {
+  height: 55px;
+  background: #F7FEFF;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.pretendard {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.fs-60px {
+  font-size: 60px;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+.font-200 {
+  font-weight: 200;
+}
+.font-300 {
+  font-weight: 300;
+}
+.font-400 {
+  font-weight: 400;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
+.font-800 {
+  font-weight: 800;
+}
+.font-900 {
+  font-weight: 900;
+}
+
+.top0 {
+  top: 0;
+}
+.bottom0 {
+  bottom: 0;
+}
+.left0 {
+  left: 0;
+}
+.right0 {
+  right: 0;
+}
+
+.py-2-3 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+
+.selectBox {
+  padding: 0.6rem 0.75rem;
+}
+
+.formline.line {
+  border: 2px solid #0075FF;
+}
+
+
+/* 하드코딩 */
+body {
+  background: black;
+  font-family: var(--jay-font-lexend);
+}
+
+input::placeholder {color:#565656 !important;}
+input::-webkit-input-placeholder {color:#565656 !important;}
+input:-ms-input-placeholder {color:#565656 !important;}
+textarea::placeholder {color:#565656 !important;}
+textarea::-webkit-input-placeholder {color:#565656 !important;}
+textarea:-ms-input-placeholder {color:#565656 !important;}
+
+input:invalid {
+  border-color: rgb(184, 18, 18);
+}
+
+.selectUl > li {
+  line-height: 2;
+}
+
+.selectUl {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.selectUl.down {
+  max-height: 500px;
+}
+
+.selectCaret.rotateCaret {
+  transform: rotate(180deg);
+}
+
+.selectUl li {
+  background-color: white;
+}
+
+.submitBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+textarea {
+  padding: 0.75rem !important;
+}
+
+/* 미디어쿼리 */
+@media (min-width: 768px) {
+  .container-jay {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .selectBox label {
+    line-height: 2;
+  }
+  input::placeholder {font-size: 12px !important;}
+  input::-webkit-input-placeholder {font-size: 12px !important;}
+  input:-ms-input-placeholder {font-size: 12px !important;}
+
+  textarea::placeholder {font-size: 12px !important;}
+  textarea::-webkit-input-placeholder {font-size: 12px !important;}
+  textarea:-ms-input-placeholder {font-size: 12px !important;}
+}
